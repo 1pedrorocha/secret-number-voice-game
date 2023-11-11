@@ -10,7 +10,7 @@ function compare() {
       console.log("acertou, miseravi");
 
       feedbackElement.innerHTML = `
-      <div><i class="fa-solid fa-check-to-slot"></i></div>
+      <div class="big-icon"><i class="fa-solid fa-check-to-slot big-icon"></i></div>
     <p>You won! The secret number is ${number}.</p>
       `;
     } else if (number > randomNumber) {

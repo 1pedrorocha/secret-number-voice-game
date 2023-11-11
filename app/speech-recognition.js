@@ -11,6 +11,28 @@ recognition.lang = "en-US";
 let speechTranscript = "";
 function onSpeak(speech) {
   speechTranscript = speech.results[0][0].transcript;
+  if (speechTranscript == "one") {
+    speechTranscript = "1";
+  } else if (speechTranscript == "two") {
+    speechTranscript = "2";
+  } else if (speechTranscript == "three") {
+    speechTranscript = "3";
+  } else if (speechTranscript == "four") {
+    speechTranscript = "4";
+  } else if (speechTranscript == "five") {
+    speechTranscript = "5";
+  } else if (speechTranscript == "six") {
+    speechTranscript = "6";
+  } else if (speechTranscript == "seven") {
+    speechTranscript = "7";
+  } else if (speechTranscript == "eight") {
+    speechTranscript = "8";
+  } else if (speechTranscript == "nine") {
+    speechTranscript = "9";
+  } else if (speechTranscript == "ten") {
+    speechTranscript = "10";
+  }
+
   showSpeechTranscript(speechTranscript);
 }
 
@@ -18,10 +40,10 @@ function showSpeechTranscript(speechTranscript) {
   guessElement.innerHTML = `
     <h3>You said:</h3>
     <span class="guess-box">${speechTranscript} </span>
-    <div><i class="fa-solid fa-arrow-up"></i></div>
-    <p>The secret number is bigger than that.</p>
-    
+        
     `;
+
+  compare();
 }
 
 recognition.addEventListener("result", onSpeak);
@@ -40,8 +62,6 @@ button.addEventListener("click", () => {
     button.textContent = "Guess";
   }
 });
-
-function compare() {}
 
 // button.addEventListener("mouseout", () => {
 //   recognition.stop();

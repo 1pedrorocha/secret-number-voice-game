@@ -14,4 +14,4 @@ function generateRandomNumber() {
 
 const randomNumber = generateRandomNumber();
 
-console.log("Random number: " + randomNumber);
+// console.log("Random number: " + randomNumber);

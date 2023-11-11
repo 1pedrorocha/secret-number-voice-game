@@ -23,25 +23,27 @@
     <title>Secret Number Game</title>
   </head>
   <body>
-    <h1 id="title-change">The Secret Number Game</h1>
-    <h2>Let's see of you can guess it...</h2>
-    <h3>
-      It is a value between <span id="min-value">1</span> and
-      <span id="max-value">100</span>
-    </h3>
+    <div id="reset">
+      <h1 id="title-change">The Secret Number Game</h1>
+      <h2>Let's see of you can guess it...</h2>
+      <h3>
+        It is a value between <span id="min-value">1</span> and
+        <span id="max-value">100</span>
+      </h3>
 
-    <div class="message" id="guess">
-      <!-- <h3>You said:</h3>
+      <div class="message" id="guess">
+        <!-- <h3>You said:</h3>
       <span class="guess-box">20</span>-->
-    </div>
+      </div>
 
-    <div class="feedback" id="feedback-guess">
-      <!--<div><i class="fa-solid fa-arrow-up"></i></div> 
+      <div class="feedback" id="feedback-guess">
+        <!--<div><i class="fa-solid fa-arrow-up"></i></div> 
        <p>The secret number is bigger than that.</p> -->
+      </div>
+      <i class="fa-solid fa-microphone"></i>
+      <h3>Click the button below and say your guess</h3>
+      <button class="guess-button">Guess</button>
     </div>
-    <i class="fa-solid fa-microphone"></i>
-    <h3>Click the button below and say your guess</h3>
-    <button class="guess-button">Guess</button>
     <script src="app/draw-number.js"></script>
     <script src="app/speech-recognition.js"></script>
     <script src="app/validation.js"></script>

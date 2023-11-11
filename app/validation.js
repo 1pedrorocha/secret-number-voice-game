@@ -17,10 +17,19 @@ function compare() {
       `;
   } else {
     if (number == randomNumber) {
-      feedbackElement.innerHTML = `
+      let resetScreen = document.getElementById("reset");
+
+      resetScreen.innerHTML = `
       <div class="big-icon"><i class="fa-solid fa-check-to-slot big-icon"></i></div>
-    <p>You won! The secret number is ${number}.</p>
+      <h1 id="title-change">You won!</h1>
+      <h2>The secret number is ${number}.</h2>
+      <button class="play-again" id="btn-play-again">Play Again!</button>
       `;
+
+      //   feedbackElement.innerHTML = `
+      //   <div class="big-icon"><i class="fa-solid fa-check-to-slot big-icon"></i></div>
+      // <p>You won! The secret number is ${number}.</p>
+      //   `;
     } else if (number > randomNumber) {
       feedbackElement.innerHTML = `
       <div><i class="fa-solid fa-arrow-down"></i></div>
@@ -35,7 +44,8 @@ function compare() {
   }
 }
 
-{
-  /* <div><i class="fa-solid fa-arrow-up"></i></div>
-    <p>The secret number is bigger than that.</p> */
-}
+document.body.addEventListener("click", (e) => {
+  if (e.target.id == "btn-play-again") {
+    window.location.reload();
+  }
+});

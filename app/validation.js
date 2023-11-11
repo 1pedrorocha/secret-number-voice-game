@@ -25,11 +25,6 @@ function compare() {
       <h2>The secret number is ${number}.</h2>
       <button class="play-again" id="btn-play-again">Play Again!</button>
       `;
-
-      //   feedbackElement.innerHTML = `
-      //   <div class="big-icon"><i class="fa-solid fa-check-to-slot big-icon"></i></div>
-      // <p>You won! The secret number is ${number}.</p>
-      //   `;
     } else if (number > randomNumber) {
       feedbackElement.innerHTML = `
       <div><i class="fa-solid fa-arrow-down"></i></div>

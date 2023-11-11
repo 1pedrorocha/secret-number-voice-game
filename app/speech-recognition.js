@@ -6,8 +6,6 @@ const guessElement = document.getElementById("guess");
 
 recognition.lang = "en-US";
 
-// recognition.start();
-
 let speechTranscript = "";
 function onSpeak(speech) {
   speechTranscript = speech.results[0][0].transcript;
@@ -62,9 +60,3 @@ button.addEventListener("click", () => {
     button.textContent = "Guess";
   }
 });
-
-// button.addEventListener("mouseout", () => {
-//   recognition.stop();
-
-//   console.log(recognition);
-// });

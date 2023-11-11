@@ -129,3 +129,10 @@ h3 {
 .play-again:hover {
   background-color: #cbaa5c;
 }
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

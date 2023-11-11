@@ -86,6 +86,9 @@ h3 {
   border: 0;
   border-radius: 16px;
   font-family: var(--secondary-font);
+  color: var(--secondary-background-color);
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .guess-button:hover {
